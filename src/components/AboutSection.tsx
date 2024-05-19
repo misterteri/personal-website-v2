@@ -16,7 +16,7 @@ export default function HeroSection(): JSX.Element {
         gap="30px"
       >
         <VStack alignItems="flex-end" spacing="4">
-          <Heading textUnderlineOffset={10} textDecoration="underline">
+          <Heading textUnderlineOffset={20} textDecoration="underline">
             About Me
           </Heading>
 

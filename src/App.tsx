@@ -1,22 +1,9 @@
-import {
-  ChakraProvider,
-  Box,
-  theme,
-  Spacer,
-  HStack,
-  Text,
-  Link,
-  Grid,
-  GridItem,
-  Heading,
-  Flex,
-  Button,
-  VStack,
-} from "@chakra-ui/react";
+import { ChakraProvider, theme } from "@chakra-ui/react";
 
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
+import { SkillsSection } from "./components/SkillsSection";
 import Footer from "./components/Footer";
 function App() {
   return (
@@ -24,6 +11,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <SkillsSection />
       <Footer />
     </ChakraProvider>
   );
