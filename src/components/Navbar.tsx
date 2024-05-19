@@ -1,16 +1,17 @@
-import { Box, HStack, Link, Spacer, Text } from "@chakra-ui/react";
+import { Box, Container, HStack, Link, Spacer, Text } from "@chakra-ui/react";
 
 export default function Navbar(): JSX.Element {
   return (
     <Box
       as="nav"
+      position="fixed"
       display="flex"
-      justifyContent="space-around"
+      flexDirection={"row"}
       padding="4"
       backgroundColor="gray.400"
+      width="full"
     >
       <Text fontSize="3xl" fontWeight="bold">
-        {" "}
         /dev/gilbert
       </Text>
       <Spacer />
