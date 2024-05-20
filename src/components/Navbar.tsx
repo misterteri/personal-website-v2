@@ -1,4 +1,4 @@
-import { Box, Container, HStack, Link, Spacer, Text } from "@chakra-ui/react";
+import { Box, HStack, Link, Spacer, Text } from "@chakra-ui/react";
 
 export default function Navbar(): JSX.Element {
   return (
@@ -10,6 +10,7 @@ export default function Navbar(): JSX.Element {
       padding="4"
       backgroundColor="gray.400"
       width="full"
+      minW="container.sm"
     >
       <Text fontSize="3xl" fontWeight="bold">
         /dev/gilbert
