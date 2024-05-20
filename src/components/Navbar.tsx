@@ -11,6 +11,7 @@ export default function Navbar(): JSX.Element {
       backgroundColor="gray.400"
       width="full"
       minW="container.sm"
+      opacity={0.8}
     >
       <Text fontSize="3xl" fontWeight="bold">
         /dev/gilbert

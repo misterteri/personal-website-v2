@@ -6,7 +6,7 @@ export default function HeroSection(): JSX.Element {
       <Flex
         justifyContent="flex-end"
         padding="4"
-        maxW={"80%"}
+        maxW="container.md"
         margin={"auto"}
         gridTemplateColumns={{
           lg: "repeat(2,1fr)",
@@ -14,9 +14,10 @@ export default function HeroSection(): JSX.Element {
           sm: "repeat(1,1fr)",
         }}
         gap="30px"
+        paddingTop={"100px"}
       >
         <VStack alignItems="flex-end" spacing="4">
-          <Heading textUnderlineOffset={10} textDecoration="underline">
+          <Heading textUnderlineOffset={20} textDecoration="underline">
             About Me
           </Heading>
 
@@ -25,34 +26,28 @@ export default function HeroSection(): JSX.Element {
           </Text>
 
           <Text fontSize="xl" color="gray.500">
-            I’m Gilbert, a software engineer with a passion for turning
-            innovative ideas into solutions that make life easier and more
-            enjoyable. With a keen interest in solving complex problems and
-            sharing my knowledge, I aim to contribute positively to society
-            through technology.
+            I'm Gilbert, a software engineer with a knack for turning ideas into
+            solutions that make life easier and more fun. I love solving complex
+            problems and sharing my knowledge to make a positive impact through
+            technology.
           </Text>
           <Text fontSize="xl" color="gray.500">
-            I’m about to graduate with a degree in Computer Science from
-            National Tsing Hua University (NTHU) in Taiwan, and I’m currently
-            seeking opportunities as a software engineer or developer. My goal
-            is to continuously hone my skills and share my experiences to
-            inspire others.
+            As a soon-to-be Computer Science graduate from National Tsing Hua
+            University (NTHU) in Taiwan, I'm on the lookout for software
+            engineering or developer roles. I'm passionate about honing my
+            skills and sharing my journey to inspire others.
           </Text>
           <Text fontSize="xl" color="gray.500">
-            In my journey so far, I’ve developed a strong foundation in both
-            front-end and back-end technologies, working on projects that range
-            from web applications to system integrations. I believe in the power
-            of collaboration and am always eager to learn and grow with my
-            peers.
+            I've built a solid foundation in both front-end and back-end
+            technologies, working on projects from web apps to system
+            integrations. I thrive on collaboration and am always eager to learn
+            and grow with my peers.
           </Text>
           <Text fontSize="xl" color="gray.500">
-            Beyond coding, I’m an advocate for lifelong learning and enjoy
-            reading, exploring new technologies, and engaging in activities that
-            broaden my perspective. Through this website, I hope to showcase my
-            work, share insights, and connect with like-minded professionals.
-          </Text>
-          <Text fontSize="xl" color="gray.500">
-            Let’s build something amazing together!
+            Outside of coding, I'm a lifelong learner who enjoys reading,
+            exploring new tech, and engaging in activities that broaden my
+            horizons. Through this website, I aim to showcase my work, share
+            insights, and connect with like-minded professionals.
           </Text>
         </VStack>
       </Flex>

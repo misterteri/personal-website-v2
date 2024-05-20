@@ -1,77 +1,108 @@
-import { Box, Button, Flex, Grid, GridItem, Heading } from "@chakra-ui/react";
-import happyemoji from "../assets/happy-emoji.svg";
+import {
+  Box,
+  Button,
+  Grid,
+  GridItem,
+  Heading,
+  Text,
+  Flex,
+  Spacer,
+  Link,
+} from "@chakra-ui/react";
 
-export default function HeroSection(): JSX.Element {
+export default function HeroSection() {
   return (
-    <section id="Introduction">
-      <Grid
-        paddingTop={"100px"}
-        id="hero"
-        margin={"auto"}
-        gridTemplateColumns={{
-          lg: "repeat(2,1fr)",
-          md: "repeat(1,1fr)",
-          sm: "repeat(1,1fr)",
-        }}
-        gap="30px"
+    <Grid
+      height="100vh"
+      templateAreas={`"name name"
+                        "surname title"
+                        "surname buttons"`}
+      templateRows="auto auto auto"
+      templateColumns="auto auto"
+      gap="10px"
+      padding="20px"
+    >
+      <GridItem
+        area="name"
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
       >
-        <GridItem display={"flex"} textAlign="left" alignItems={"center"}>
-          <Box>
-            <Heading
-              size={{ lg: "2xl", md: "2xl", sm: "2xl", base: "xl" }}
-              color="rgb(8, 111, 143)"
-              marginBottom={{ lg: "10px" }}
+        <Heading fontSize="280px">MARCELINO</Heading>
+      </GridItem>
+
+      <GridItem
+        area="surname"
+        display="flex"
+        alignItems="center"
+        justifyContent="left"
+      >
+        <Heading fontSize="280px">GILBERT</Heading>
+      </GridItem>
+
+      <GridItem
+        area="title"
+        display="flex"
+        flexDirection="column"
+        alignItems="left"
+        justifyContent="flex-start"
+      >
+        <Box>
+          <Text fontSize="50px" color="black">
+            Hsinchu, Taiwan
+          </Text>
+        </Box>
+        <Box display="flex" alignItems="center">
+          <Text
+            fontSize="60px"
+            fontWeight="extra-bold"
+            color="black"
+            marginRight="10px"
+          >
+            •
+          </Text>
+          <Text fontSize="50px" color="black">
+            Full Stack Dev.
+          </Text>
+        </Box>
+        <Box display="flex" alignItems="center">
+          <Text
+            fontSize="60px"
+            fontWeight="extra-bold"
+            color="black"
+            marginRight="10px"
+          >
+            •
+          </Text>
+          <Text fontSize="50px" color="black">
+            Software Eng.
+          </Text>
+        </Box>
+      </GridItem>
+
+      <GridItem
+        area="buttons"
+        alignItems="center"
+        justifyContent="space-between"
+        paddingX="10"
+        zIndex={-1}
+      >
+        <Box>
+          <Link href="resume_view">
+            <Button
+              bg="black"
+              _hover={{ bg: "gray" }}
+              color="white"
+              variant="solid"
+              margin="inherit"
+              borderRadius="3px"
+              fontSize="32px"
             >
-              Marcelino Gilbert
-            </Heading>
-            <Heading
-              fontWeight={"normal"}
-              size={{ lg: "xl", md: "xl", sm: "xl", base: "lg" }}
-              color="rgb(90,90,90)"
-              marginBottom={"16px"}
-            >
-              Full Stack Web Developer
-            </Heading>
-            <Flex gap={"10px"} wrap={"wrap"} flexDirection="column">
-              <a href="resume_download">
-                <Button
-                  bg={"rgb(1, 75, 97);"}
-                  _hover={{ bg: "rgb(14, 129, 165)" }}
-                  color="white"
-                  variant={"solid"}
-                  width="100px"
-                  height={"40px"}
-                  borderRadius="3px"
-                  marginBottom={"10px"}
-                  fontSize="16px"
-                >
-                  Resume
-                </Button>
-              </a>
-              <a href="resume_view">
-                <Button
-                  bg={"rgb(1, 75, 97);"}
-                  _hover={{ bg: "rgb(14, 129, 165)" }}
-                  color="white"
-                  variant={"solid"}
-                  width="120px"
-                  height={"40px"}
-                  borderRadius="3px"
-                  marginBottom={"10px"}
-                  fontSize="16px"
-                >
-                  View Resume
-                </Button>
-              </a>
-            </Flex>
-          </Box>
-        </GridItem>
-        <GridItem display={"flex"} justifyContent={"center"} maxW={"70%"}>
-          <Box>
-            <img src={happyemoji} alt="happy-emoji" />
-          </Box>
-        </GridItem>
-      </Grid>
-    </section>
+              view resume
+            </Button>
+          </Link>
+        </Box>
+      </GridItem>
+    </Grid>
   );
 }
