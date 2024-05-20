@@ -10,6 +10,8 @@ import {
   Link,
 } from "@chakra-ui/react";
 
+import ScrollArrow from "./ScrollArrow";
+
 export default function HeroSection() {
   return (
     <Grid
@@ -85,24 +87,22 @@ export default function HeroSection() {
         alignItems="center"
         justifyContent="space-between"
         paddingX="10"
-        zIndex={-1}
       >
-        <Box>
-          <Link href="resume_view">
-            <Button
-              bg="black"
-              _hover={{ bg: "gray" }}
-              color="white"
-              variant="solid"
-              margin="inherit"
-              borderRadius="3px"
-              fontSize="32px"
-            >
-              view resume
-            </Button>
-          </Link>
-        </Box>
+        <Link href="resume_view">
+          <Button
+            bg="black"
+            _hover={{ bg: "gray" }}
+            color="white"
+            variant="solid"
+            margin="inherit"
+            borderRadius="3px"
+            fontSize="32px"
+          >
+            view resume
+          </Button>
+        </Link>
       </GridItem>
+      <ScrollArrow />
     </Grid>
   );
 }
