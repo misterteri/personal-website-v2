@@ -26,7 +26,7 @@ export default function Navbar(): JSX.Element {
       </Box>
       <Spacer />
       <HStack spacing={8}>
-        <Link href="#about">
+        <Link href="#about-me">
           <Text fontSize="xl">About Me</Text>
         </Link>
 

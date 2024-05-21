@@ -2,7 +2,7 @@ import { Flex, Heading, Text, VStack } from "@chakra-ui/react";
 
 export default function HeroSection(): JSX.Element {
   return (
-    <section id="About Me">
+    <section id="about-me">
       <Flex
         justifyContent="flex-end"
         padding="4"
