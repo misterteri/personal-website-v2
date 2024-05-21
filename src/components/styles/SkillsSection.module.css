@@ -29,9 +29,6 @@
   .gitIcon:hover {
     color: rgb(232, 78, 49);
   }
-  .expIcon {
-    margin: 0;
-  }
   .expIcon:hover {
     color: black;
   }
@@ -43,4 +40,7 @@
   }
   .problemIcon:hover {
     color: rgb(255, 0, 0);
+  }
+  .pythonIcon:hover {
+    color: rgb(247, 223, 30);
   }
