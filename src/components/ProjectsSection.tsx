@@ -18,26 +18,26 @@ export default function ProjectsSection() {
         </Heading>
         <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
           <ProjectCard
-            title="Project 1"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et nunc."
+            title="Spotify API"
+            description="In this project, I developed a data analysis pipeline for Spotify music data, encompassing data collection, preprocessing (handling missing values and normalization), and visualization using heatmaps. Key techniques included feature selection, model training, and correlation analysis, leveraging technologies like Python, Pandas, Numpy, and Scikit-learn. Visualization was achieved with Matplotlib and Seaborn, and data was accessed through the Spotify API."
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 1"
           />
           <ProjectCard
-            title="Project 2"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et nunc."
+            title="Coming Soon"
+            description="-"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 2"
           />
           <ProjectCard
-            title="Project 3"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et nunc."
+            title="Coming Soon"
+            description="-"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 3"
           />
           <ProjectCard
-            title="Project 4"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet urna et nunc."
+            title="Coming Soon"
+            description="-"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 4"
           />
