@@ -5,14 +5,13 @@ export default function Navbar(): JSX.Element {
     <Flex
       position="fixed"
       top="0"
-      left="0"
-      right="0"
-      backgroundColor="gray.400"
-      width="full"
-      minW="container.sm"
+      left="50%"
+      transform="translateX(-50%)"
+      maxW="container.xl"
+      width="100%"
       paddingInline={4}
       height="60px" // Set a fixed height for the Navbar
-      opacity={0.9} // Add opacity to make it slightly transparent
+      backdropFilter="blur(5px)" // Add backdrop filter to make the content slightly blurry
       zIndex={10} // Add z-index to make it appear above other elements
     >
       <Box
