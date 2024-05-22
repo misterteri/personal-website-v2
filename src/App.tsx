@@ -5,6 +5,7 @@ import AboutSection from "./components/AboutSection";
 import Navbar from "./components/Navbar";
 import { SkillsSection } from "./components/SkillsSection";
 import Footer from "./components/Footer";
+import ProjectsSection from "./components/ProjectsSection";
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -12,6 +13,7 @@ function App() {
       <HeroSection />
       <AboutSection />
       <SkillsSection />
+      <ProjectsSection />
       <Footer />
     </ChakraProvider>
   );
