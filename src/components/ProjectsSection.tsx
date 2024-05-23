@@ -24,19 +24,19 @@ export default function ProjectsSection() {
             imageAlt="Project 1"
           />
           <ProjectCard
-            title="Coming Soon"
-            description="-"
+            title="Web Mario"
+            description="School's Project"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 2"
           />
           <ProjectCard
-            title="Coming Soon"
+            title="ERP Dashboard"
             description="-"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 3"
           />
           <ProjectCard
-            title="Coming Soon"
+            title="Weather App"
             description="-"
             imageSrc="https://via.placeholder.com/300"
             imageAlt="Project 4"

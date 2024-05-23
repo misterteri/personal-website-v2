@@ -15,7 +15,15 @@ export default function ProjectCard({
   imageAlt,
 }: ProjectCardProps) {
   return (
-    <Box bg="white" shadow="md" borderRadius="md" p="6">
+    <Box
+      bg="white"
+      shadow="md"
+      borderRadius="md"
+      p="6"
+      maxW="sm"
+      borderWidth="1px"
+      overflow={"hidden"}
+    >
       <Image src={imageSrc} alt={imageAlt} />
       <Heading as="h3" size="md" mt="4">
         {title}
