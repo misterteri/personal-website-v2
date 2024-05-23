@@ -19,23 +19,66 @@ export default function Navbar(): JSX.Element {
         margin="auto"
         padding="2"
       >
-        <Text fontSize="3xl" fontWeight="bold">
-          /dev/gilbert
-        </Text>
+        <Link href="/">
+          <Text fontSize="3xl" fontWeight="bold">
+            /dev/gilbert
+          </Text>
+        </Link>
       </Box>
       <Spacer />
-      <HStack spacing={8}>
-        <Link href="#about-me">
+      <HStack spacing={4}>
+        <Link
+          href="#about-me"
+          // border="1px solid #e2e8f0"
+          borderRadius="md"
+          paddingInline={1}
+          paddingBlockStart={1} // Modify padding top
+          paddingBlockEnd={2} // Modify padding bottom
+          _hover={{
+            bg: "gray.100",
+            time: "0.3s",
+          }}
+        >
           <Text fontSize="xl">About Me</Text>
         </Link>
 
-        <Link href="#skills">
+        <Link
+          href="#skills" // border="1px solid #e2e8f0"
+          borderRadius="md"
+          paddingInline={1}
+          paddingBlockStart={1} // Modify padding top
+          paddingBlockEnd={2} // Modify padding bottom
+          _hover={{
+            bg: "gray.100",
+            time: "0.3s",
+          }}
+        >
           <Text fontSize="xl">Skills</Text>
         </Link>
-        <Link href="#projects">
+        <Link
+          href="#projects" // border="1px solid #e2e8f0"
+          borderRadius="md"
+          paddingInline={1}
+          paddingBlockStart={1} // Modify padding top
+          paddingBlockEnd={2} // Modify padding bottom
+          _hover={{
+            bg: "gray.100",
+            time: "0.3s",
+          }}
+        >
           <Text fontSize="xl">Projects</Text>
         </Link>
-        <Link href="#contact">
+        <Link
+          href="#contact" // border="1px solid #e2e8f0"
+          borderRadius="md"
+          paddingInline={1}
+          paddingBlockStart={1} // Modify padding top
+          paddingBlockEnd={2} // Modify padding bottom
+          _hover={{
+            bg: "gray.100",
+            time: "0.3s",
+          }}
+        >
           <Text fontSize="xl">Contact</Text>
         </Link>
       </HStack>
