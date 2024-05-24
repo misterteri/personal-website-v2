@@ -21,25 +21,37 @@ export default function HeroSection() {
                         "surname buttons"`}
       templateRows="auto auto auto"
       templateColumns="auto auto"
-      gap="10px"
-      padding="20px"
+      // gap="10px"
+      // padding="20px"
     >
       <GridItem
         area="name"
         display="flex"
         alignItems="center"
         justifyContent="center"
+        border="1px solid black"
       >
-        <Heading fontSize="280px">MARCELINO</Heading>
+        <Heading
+          fontSize={["6.375vw", "10.2vw", "13.225vw", "16.5vw"]}
+          transform="scaleY(1.3)"
+        >
+          MARCELINO
+        </Heading>
       </GridItem>
 
       <GridItem
         area="surname"
         display="flex"
         alignItems="center"
-        justifyContent="left"
+        justifyContent="center"
+        border="1px solid black"
       >
-        <Heading fontSize="280px">GILBERT</Heading>
+        <Heading
+          fontSize={["6.375vw", "10.2vw", "13.225vw", "18vw"]}
+          transform="scaleY(1.3)"
+        >
+          GILBERT
+        </Heading>
       </GridItem>
 
       <GridItem
@@ -48,19 +60,21 @@ export default function HeroSection() {
         flexDirection="column"
         alignItems="left"
         justifyContent="flex-start"
+        // make the vertical spaces between the boxes to be 1px
+        paddingTop={12}
       >
-        <Box>
+        <Box border="1px solid black">
           <Text fontSize="50px" color="black">
             Hsinchu, Taiwan
           </Text>
         </Box>
-        <Box display="flex" alignItems="center">
-          <Text
-            fontSize="60px"
-            fontWeight="extra-bold"
-            color="black"
-            marginRight="10px"
-          >
+        <Box
+          display="flex"
+          alignItems="center"
+          border="1px solid black"
+          padding="0px"
+        >
+          <Text fontSize="60px" fontWeight="extra-bold" color="black">
             •
           </Text>
           <Text fontSize="50px" color="black">
