@@ -10,7 +10,7 @@ export default function Navbar(): JSX.Element {
       maxW="container.xl"
       width="100%"
       paddingInline={4}
-      height="10vh" // Set a fixed height for the Navbar
+      height="7vh" // Set a fixed height for the Navbar
       backdropFilter="blur(5px)" // Add backdrop filter to make the content slightly blurry
       zIndex={10} // Add z-index to make it appear above other elements
     >
