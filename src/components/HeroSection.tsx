@@ -5,31 +5,45 @@ import {
   GridItem,
   Heading,
   Text,
-  Flex,
-  Spacer,
   Link,
+  keyframes,
 } from "@chakra-ui/react";
 
 import ScrollArrow from "./ScrollArrow";
 
+// Keyframes for button animation
+const pulse = keyframes`
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+`;
+
 export default function HeroSection() {
   return (
     <Grid
-      paddingTop={"10vh"}
+      paddingTop={"7vh"}
       templateAreas={`"name name"
                         "surname title"
                         "surname buttons"`}
       templateRows="auto auto auto"
       templateColumns="auto auto"
-      // gap="10px"
-      // padding="20px"
+      userSelect={"none"}
     >
       <GridItem
         area="name"
         display="flex"
         alignItems="center"
         justifyContent="center"
-        border="1px solid black"
+        userSelect={"none"}
       >
         <Heading fontSize="16.5vw" transform="scaleY(1.3)">
           MARCELINO
@@ -41,11 +55,11 @@ export default function HeroSection() {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        border="1px solid black"
       >
         <Heading
           fontSize={["18vw", "18vw", "18vw", "18vw"]}
           transform="scaleY(1.3)"
+          zIndex={-1}
         >
           GILBERT
         </Heading>
@@ -58,17 +72,17 @@ export default function HeroSection() {
         alignItems="left"
         padding="1vw"
       >
-        <Box border="1px solid black">
+        <Box>
           <Text fontSize="3vw" color="black" fontWeight={"bold"}>
             Hsinchu, Taiwan
           </Text>
         </Box>
-        <Box display="flex" border="1px solid black">
+        <Box display="flex">
           <Text fontSize="3vw" color="black">
             jr. fullstack
           </Text>
         </Box>
-        <Box display="flex" alignItems="center" border="1px solid black">
+        <Box display="flex" alignItems="center">
           <Text fontSize="3vw" color="black">
             jr. data engineer
           </Text>
@@ -84,14 +98,16 @@ export default function HeroSection() {
         <Link href="resume_view">
           <Button
             bg="black"
-            _hover={{ bg: "gray" }}
+            _hover={{ bg: "gray.800" }}
             color="white"
             variant="solid"
             paddingInline={"1vw"}
-            paddingBlockStart={"1.5vw"} // Modify padding top
-            paddingBlockEnd={"2vw"} // Modify padding bottom
+            paddingBlockStart={"1.5vw"}
+            paddingBlockEnd={"2vw"}
             borderRadius="5px"
             fontSize="3vw"
+            animation={`${pulse} 2s infinite`}
+            transition="transform 0.2s, box-shadow 0.2s"
           >
             view resume
           </Button>
