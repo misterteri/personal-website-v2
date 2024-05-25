@@ -30,6 +30,7 @@ const pulse = keyframes`
 export default function HeroSection() {
   return (
     <Grid
+      id="herosection"
       paddingTop={"7vh"}
       templateAreas={`"name name"
                         "surname title"

@@ -19,7 +19,7 @@ export default function Navbar(): JSX.Element {
         margin="auto"
         padding="2"
       >
-        <Link href="/">
+        <Link href="#herosection">
           <Text fontSize="3xl" fontWeight="bold">
             /dev/gilbert
           </Text>
