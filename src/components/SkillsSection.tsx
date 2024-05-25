@@ -1,7 +1,12 @@
 import SkillCard from "./SkillCard";
 import styles from "./styles/SkillsSection.module.css";
 
-import { GrReactjs } from "react-icons/gr";
+import { GrGolang, GrReactjs } from "react-icons/gr";
+import {
+  TbBrandGolang,
+  TbBrandJavascript,
+  TbBrandTypescript,
+} from "react-icons/tb";
 import {
   SiRedux,
   SiJavascript,
@@ -25,12 +30,12 @@ export function SkillsSection() {
   return (
     <Container maxW={"80%"} id="skills" paddingTop={"180px"}>
       <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
-        Skills
+        Technical Skills
       </Heading>
       <br />
       <br />
       <Heading textAlign={"center"} size={"xl"} color="rgb(14, 36, 49)">
-        Technical Skills
+        Languages
       </Heading>
       <br />
       <br />
@@ -44,23 +49,44 @@ export function SkillsSection() {
       >
         <GridItem>
           <SkillCard
-            hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
-            skill="React"
+            // hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
+            skill="Golang"
             icon={
-              <GrReactjs
-                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.reactIcon}`}
+              <TbBrandGolang
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.golangIcon}`}
               />
             }
           />
         </GridItem>
-
         <GridItem>
           <SkillCard
             hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="JavaScript"
             icon={
-              <SiJavascript
+              <TbBrandJavascript
                 className={`${styles.skillIcon} ${styles.jsIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
+            skill="TypeScript"
+            icon={
+              <TbBrandTypescript
+                className={`${styles.skillIcon} ${styles.jsIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
+            skill="React"
+            icon={
+              <GrReactjs
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.reactIcon}`}
               />
             }
           />
