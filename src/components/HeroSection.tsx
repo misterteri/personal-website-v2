@@ -74,19 +74,15 @@ export default function HeroSection() {
         padding="1vw"
       >
         <Box>
-          <Text fontSize="3vw" color="black" fontWeight={"bold"}>
+          <Text fontSize="3vw" fontWeight={"bold"}>
             Hsinchu, Taiwan
           </Text>
         </Box>
         <Box display="flex">
-          <Text fontSize="3vw" color="black">
-            jr. fullstack
-          </Text>
+          <Text fontSize="3vw">jr. fullstack</Text>
         </Box>
         <Box display="flex" alignItems="center">
-          <Text fontSize="3vw" color="black">
-            jr. data engineer
-          </Text>
+          <Text fontSize="3vw">jr. data engineer</Text>
         </Box>
       </GridItem>
 
@@ -96,25 +92,22 @@ export default function HeroSection() {
         flexDirection="column"
         alignItems="center"
       >
-        <Link href="resume_view">
-          <Button
-            bg="black"
-            _hover={{ bg: "gray.800" }}
-            color="white"
-            variant="solid"
-            paddingInline={"1vw"}
-            paddingBlockStart={"1.5vw"}
-            paddingBlockEnd={"2vw"}
-            borderRadius="5px"
-            fontSize="3vw"
-            animation={`${pulse} 2s infinite`}
-            transition="transform 0.2s, box-shadow 0.2s"
-          >
-            view resume
-          </Button>
+        <Link
+          href="resume_view"
+          _hover={{ filter: "invert(100%)" }}
+          variant="solid"
+          paddingInline={"1vw"}
+          paddingBlockStart={"0.5vw"}
+          paddingBlockEnd={"1vw"}
+          borderRadius="5px"
+          fontSize="3vw"
+          animation={`${pulse} 2s infinite`}
+          transition="transform 0.2s, box-shadow 0.2s"
+        >
+          view resume
         </Link>
       </GridItem>
-      <ScrollArrow />
+      {/* <ScrollArrow /> */}
     </Grid>
   );
 }
