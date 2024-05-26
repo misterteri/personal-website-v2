@@ -1,33 +1,58 @@
+
 .skillIcon {
-    font-size: 40px;
-    color: rgb(8, 111, 143);
-  }
-  .reactIcon:hover {
+  font-size: 40px;
+  color:rgb(1, 167, 208)
+}
+.golangIcon:hover {
+  color: rgb(0, 161, 227);
+}
+.javascriptIcon:hover {
+  color:rgb(232, 212, 76)
+}
+.typescriptIcon:hover {
+  color:rgb(47, 116, 191)
+}
+.cppIcon:hover {
+  color:rgb(0, 65, 125);
+}
+.pythonIcon:hover {
+  color: rgb(247, 223, 30);
+}
+.htmlIcon:hover {
+  color: rgb(233, 98, 40);
+}
+.gitIcon:hover {
+  color: rgb(232, 78, 49);
+}
+.dockerIcon:hover {
+  color: rgb(0, 141, 223);
+}
+.tableauIcon:hover {
+  color: black;
+}
+.mongoIcon:hover {
+  color: rgb(82, 167, 75);
+}
+.firebaseIcon:hover {
+  color: rgb(245, 132, 16);
+}
+.sqlIcon:hover {
+  color: rgb(255, 255, 255);
+}
+.reactIcon:hover {
     color: rgb(94, 211, 243);
   }
   .reduxIcon:hover {
     color: rgb(118, 76, 183);
   }
-  .jsIcon:hover {
-    color: rgb(247, 223, 30);
-  }
   .muiIcon:hover {
     color: rgb(0, 129, 203);
-  }
-  .htmlIcon:hover {
-    color: rgb(233, 98, 40);
   }
   .cssIcon:hover {
     color: rgb(37, 75, 221);
   }
   .nodeIcon:hover {
     color: rgb(95, 151, 89);
-  }
-  .mongoIcon:hover {
-    color: rgb(82, 167, 75);
-  }
-  .gitIcon:hover {
-    color: rgb(232, 78, 49);
   }
   .expIcon:hover {
     color: black;
@@ -40,7 +65,4 @@
   }
   .problemIcon:hover {
     color: rgb(255, 0, 0);
-  }
-  .pythonIcon:hover {
-    color: rgb(247, 223, 30);
   }

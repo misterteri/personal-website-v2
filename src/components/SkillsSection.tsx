@@ -3,9 +3,19 @@ import styles from "./styles/SkillsSection.module.css";
 
 import { GrGolang, GrReactjs } from "react-icons/gr";
 import {
+  TbBrandCpp,
   TbBrandGolang,
   TbBrandJavascript,
   TbBrandTypescript,
+  TbBrandGit,
+  TbBrandDocker,
+  TbBrandMongodb,
+  TbBrandFirebase,
+  TbBrandMysql,
+  TbBrandHtml5,
+  TbBrandDjango,
+  TbBrandNextjs,
+  TbBrandReact,
 } from "react-icons/tb";
 import {
   SiRedux,
@@ -18,6 +28,9 @@ import {
   SiPostman,
   SiExpress,
   SiPython,
+  SiCplusplus,
+  SiTableau,
+  SiChakraui,
 } from "react-icons/si";
 import { FaGitAlt, FaBusinessTime } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
@@ -29,12 +42,12 @@ import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 export function SkillsSection() {
   return (
     <Container maxW={"80%"} id="skills" paddingTop={"180px"}>
-      <Heading textAlign={"center"} size={"2xl"} color="rgb(14, 36, 49)">
+      <Heading textAlign={"center"} size={"2xl"}>
         Technical Skills
       </Heading>
       <br />
       <br />
-      <Heading textAlign={"center"} size={"xl"} color="rgb(14, 36, 49)">
+      <Heading textAlign={"center"} size={"xl"}>
         Languages
       </Heading>
       <br />
@@ -45,11 +58,10 @@ export function SkillsSection() {
           md: "repeat(4,1fr)",
           sm: "repeat(2,1fr)",
         }}
-        gridTemplateRows={{ lg: "repeat(2,1fr)" }}
       >
         <GridItem>
           <SkillCard
-            // hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
+            hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
             skill="Golang"
             icon={
               <TbBrandGolang
@@ -64,7 +76,7 @@ export function SkillsSection() {
             skill="JavaScript"
             icon={
               <TbBrandJavascript
-                className={`${styles.skillIcon} ${styles.jsIcon}`}
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.javascriptIcon}`}
               />
             }
           />
@@ -75,29 +87,152 @@ export function SkillsSection() {
             skill="TypeScript"
             icon={
               <TbBrandTypescript
-                className={`${styles.skillIcon} ${styles.jsIcon}`}
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.typescriptIcon}`}
               />
             }
           />
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
-            skill="React"
+            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
+            skill="C++"
             icon={
-              <GrReactjs
-                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.reactIcon}`}
+              <TbBrandCpp
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.cppIcon}`}
               />
             }
           />
         </GridItem>
-
+        <GridItem>
+          <SkillCard
+            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
+            skill="Python"
+            icon={
+              <SiPython
+                className={`${styles.skillIcon} ${styles.pythonIcon}`}
+              />
+            }
+          />
+        </GridItem>
+      </Grid>
+      <br />
+      <br />
+      <Heading textAlign={"center"} size={"xl"}>
+        Tools
+      </Heading>
+      <br />
+      <br />
+      <Grid
+        gridTemplateColumns={{
+          lg: "repeat(6,1fr)",
+          md: "repeat(4,1fr)",
+          sm: "repeat(2,1fr)",
+        }}
+      >
+        <GridItem>
+          <SkillCard
+            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+            skill="Git"
+            icon={
+              <TbBrandGit
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.gitIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+            skill="Docker"
+            icon={
+              <TbBrandDocker
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.dockerIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
+            skill="Tableau"
+            icon={
+              <SiTableau
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.tableauIcon}`}
+              />
+            }
+          />
+        </GridItem>
+      </Grid>
+      <br />
+      <br />
+      <Heading textAlign={"center"} size={"xl"}>
+        Database
+      </Heading>
+      <br />
+      <br />
+      <Grid
+        gridTemplateColumns={{
+          lg: "repeat(6,1fr)",
+          md: "repeat(4,1fr)",
+          sm: "repeat(2,1fr)",
+        }}
+      >
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="MongoDb"
+            icon={
+              <TbBrandMongodb
+                className={`${styles.skillIcon} ${styles.mongoIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="Firebase"
+            icon={
+              <TbBrandFirebase
+                className={`${styles.skillIcon} ${styles.firebaseIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="SQL"
+            icon={
+              <TbBrandMysql
+                className={`${styles.skillIcon} ${styles.sqlIcon}`}
+              />
+            }
+          />
+        </GridItem>
+      </Grid>
+      <br />
+      <br />
+      <Heading textAlign={"center"} size={"xl"}>
+        Web Technologies
+      </Heading>
+      <br />
+      <br />
+      <Grid
+        gridTemplateColumns={{
+          lg: "repeat(6,1fr)",
+          md: "repeat(4,1fr)",
+          sm: "repeat(2,1fr)",
+        }}
+      >
         <GridItem>
           <SkillCard
             hover={"rgba(233, 98, 40, 0.4)"}
-            skill="Html"
+            skill="HTML5"
             icon={
-              <SiHtml5 className={`${styles.skillIcon} ${styles.htmlIcon}`} />
+              <TbBrandHtml5
+                className={`${styles.skillIcon} ${styles.SkillCard} ${styles.htmlIcon}`}
+              />
             }
           />
         </GridItem>
@@ -121,27 +256,7 @@ export function SkillsSection() {
             }
           />
         </GridItem>
-        <GridItem>
-          <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
-            skill="MongoDb"
-            icon={
-              <SiMongodb
-                className={`${styles.skillIcon} ${styles.mongoIcon}`}
-              />
-            }
-          />
-        </GridItem>
 
-        <GridItem>
-          <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
-            skill="Git"
-            icon={
-              <FaGitAlt className={`${styles.skillIcon} ${styles.gitIcon}`} />
-            }
-          />
-        </GridItem>
         <GridItem>
           <SkillCard
             hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
@@ -149,13 +264,47 @@ export function SkillsSection() {
             icon={<SiNpm className={`${styles.skillIcon} ${styles.gitIcon}`} />}
           />
         </GridItem>
+        {/* Django */}
         <GridItem>
           <SkillCard
-            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
-            skill="Python"
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="Django"
             icon={
-              <SiPython
-                className={`${styles.skillIcon} ${styles.pythonIcon}`}
+              <TbBrandDjango
+                className={`${styles.skillIcon} ${styles.DjangoIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="Chakra UI"
+            icon={
+              <SiChakraui
+                className={`${styles.skillIcon} ${styles.ChakrauiIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="Next.js"
+            icon={
+              <TbBrandNextjs
+                className={`${styles.skillIcon} ${styles.NextjsIcon}`}
+              />
+            }
+          />
+        </GridItem>
+        <GridItem>
+          <SkillCard
+            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
+            skill="React"
+            icon={
+              <TbBrandReact
+                className={`${styles.skillIcon} ${styles.ReactIcon}`}
               />
             }
           />
