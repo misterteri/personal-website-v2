@@ -1,7 +1,5 @@
 import SkillCard from "./SkillCard";
 import styles from "./styles/SkillsSection.module.css";
-
-import { GrGolang, GrReactjs } from "react-icons/gr";
 import {
   TbBrandCpp,
   TbBrandGolang,
@@ -17,27 +15,11 @@ import {
   TbBrandNextjs,
   TbBrandReact,
   TbBrandNpm,
+  TbBrandCss3,
+  TbBrandNodejs,
+  TbBrandPython,
 } from "react-icons/tb";
-import {
-  SiRedux,
-  SiJavascript,
-  SiHtml5,
-  SiCss3,
-  SiNodedotjs,
-  SiMongodb,
-  SiNpm,
-  SiPostman,
-  SiExpress,
-  SiPython,
-  SiCplusplus,
-  SiTableau,
-  SiChakraui,
-} from "react-icons/si";
-import { FaGitAlt, FaBusinessTime } from "react-icons/fa";
-import { RiTeamFill } from "react-icons/ri";
-import { GiTeamUpgrade } from "react-icons/gi";
-import { MdConnectWithoutContact, MdReportProblem } from "react-icons/md";
-import { BsQuestionCircleFill } from "react-icons/bs";
+import { SiTableau, SiChakraui } from "react-icons/si";
 import { Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 
 export function SkillsSection() {
@@ -109,7 +91,7 @@ export function SkillsSection() {
             hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="Python"
             icon={
-              <SiPython
+              <TbBrandPython
                 className={`${styles.skillIcon} ${styles.pythonIcon}`}
               />
             }
@@ -242,7 +224,9 @@ export function SkillsSection() {
             hover={"rgba(37, 75, 221, 0.4)"}
             skill="Css"
             icon={
-              <SiCss3 className={`${styles.skillIcon} ${styles.cssIcon}`} />
+              <TbBrandCss3
+                className={`${styles.skillIcon} ${styles.cssIcon}`}
+              />
             }
           />
         </GridItem>
@@ -251,7 +235,7 @@ export function SkillsSection() {
             hover={"rgba(95, 151, 89, 0.4)"}
             skill="Node"
             icon={
-              <SiNodedotjs
+              <TbBrandNodejs
                 className={`${styles.skillIcon} ${styles.nodeIcon}`}
               />
             }
