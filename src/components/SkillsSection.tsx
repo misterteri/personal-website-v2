@@ -16,6 +16,7 @@ import {
   TbBrandDjango,
   TbBrandNextjs,
   TbBrandReact,
+  TbBrandNpm,
 } from "react-icons/tb";
 import {
   SiRedux,
@@ -261,17 +262,19 @@ export function SkillsSection() {
           <SkillCard
             hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Npm"
-            icon={<SiNpm className={`${styles.skillIcon} ${styles.gitIcon}`} />}
+            icon={
+              <TbBrandNpm className={`${styles.skillIcon} ${styles.npmIcon}`} />
+            }
           />
         </GridItem>
-        {/* Django */}
+
         <GridItem>
           <SkillCard
             hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Django"
             icon={
               <TbBrandDjango
-                className={`${styles.skillIcon} ${styles.DjangoIcon}`}
+                className={`${styles.skillIcon} ${styles.djangoIcon}`}
               />
             }
           />
@@ -282,7 +285,7 @@ export function SkillsSection() {
             skill="Chakra UI"
             icon={
               <SiChakraui
-                className={`${styles.skillIcon} ${styles.ChakrauiIcon}`}
+                className={`${styles.skillIcon} ${styles.chakraIcon}`}
               />
             }
           />
@@ -293,7 +296,7 @@ export function SkillsSection() {
             skill="Next.js"
             icon={
               <TbBrandNextjs
-                className={`${styles.skillIcon} ${styles.NextjsIcon}`}
+                className={`${styles.skillIcon} ${styles.nextIcon}`}
               />
             }
           />
@@ -304,7 +307,7 @@ export function SkillsSection() {
             skill="React"
             icon={
               <TbBrandReact
-                className={`${styles.skillIcon} ${styles.ReactIcon}`}
+                className={`${styles.skillIcon} ${styles.reactIcon}`}
               />
             }
           />

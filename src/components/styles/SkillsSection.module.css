@@ -18,9 +18,6 @@
 .pythonIcon:hover {
   color: rgb(247, 223, 30);
 }
-.htmlIcon:hover {
-  color: rgb(233, 98, 40);
-}
 .gitIcon:hover {
   color: rgb(232, 78, 49);
 }
@@ -39,30 +36,27 @@
 .sqlIcon:hover {
   color: rgb(255, 255, 255);
 }
+.htmlIcon:hover {
+  color: rgb(233, 98, 40);
+}
+.cssIcon:hover {
+  color: rgb(37, 75, 221);
+}
+.nodeIcon:hover {
+  color: rgb(25, 25, 25);
+}
+.npmIcon:hover {
+  color: rgb(220, 46, 53);
+}
+.djangoIcon:hover {
+  color: rgb(10, 45, 31);
+}
+.chakraIcon:hover {
+  color: rgb(42, 185, 173);
+}
+.nextIcon:hover {
+  color: rgb(0, 0, 0);
+}
 .reactIcon:hover {
-    color: rgb(94, 211, 243);
-  }
-  .reduxIcon:hover {
-    color: rgb(118, 76, 183);
-  }
-  .muiIcon:hover {
-    color: rgb(0, 129, 203);
-  }
-  .cssIcon:hover {
-    color: rgb(37, 75, 221);
-  }
-  .nodeIcon:hover {
-    color: rgb(95, 151, 89);
-  }
-  .expIcon:hover {
-    color: black;
-  }
-  .leaderIcon:hover {
-    color: rgb(82, 167, 75);
-  }
-  .teamIcon:hover {
-    color: rgb(232, 78, 49);
-  }
-  .problemIcon:hover {
-    color: rgb(255, 0, 0);
-  }
+  color: rgb(94, 211, 243);
+}
