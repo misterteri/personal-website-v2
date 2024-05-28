@@ -93,7 +93,7 @@ export default function HeroSection() {
         alignItems="center"
       >
         <Link
-          href="resume_view"
+          href="https://drive.google.com/file/d/1jPIHBc3KxCRrosEjnPYA03Zi2XV3k-GN/view?usp=sharing"
           _hover={{ filter: "invert(100%)" }}
           variant="solid"
           paddingInline={"1vw"}
