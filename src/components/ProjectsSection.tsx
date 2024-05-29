@@ -1,5 +1,6 @@
-import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid, Button } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
+import Link from "next/link";
 
 export default function ProjectsSection() {
   return (
@@ -42,6 +43,9 @@ export default function ProjectsSection() {
             imageAlt="Project 4"
           />
         </SimpleGrid>
+        <Link colorScheme="blue" size="lg" mt="8" as="a" href="/ProjectsPage">
+          View More
+        </Link>
       </Container>
     </Box>
   );
