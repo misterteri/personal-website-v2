@@ -17,7 +17,6 @@ export default function Navbar(): JSX.Element {
       <Box
         // border="1px solid #e2e8f0"
         margin="auto"
-        padding="2"
       >
         <ScrollLink
           to="herosection"
@@ -34,6 +33,7 @@ export default function Navbar(): JSX.Element {
       <HStack spacing={4}>
         <ScrollLink to="about-me" smooth={true} duration={500} offset={-70}>
           <Box
+            margin="auto"
             borderRadius="md"
             paddingInline={1}
             paddingBlockStart={1}
