@@ -44,7 +44,6 @@ export function SkillsSection() {
       >
         <GridItem>
           <SkillCard
-            hover={"rgba(94, 211, 243, 0.4) 0px 5px 20px 2px"}
             skill="Golang"
             icon={
               <TbBrandGolang
@@ -55,7 +54,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="JavaScript"
             icon={
               <TbBrandJavascript
@@ -66,7 +64,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="TypeScript"
             icon={
               <TbBrandTypescript
@@ -77,7 +74,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="C++"
             icon={
               <TbBrandCpp
@@ -88,7 +84,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(247, 223, 30, 0.4) 0px 10px 20px 4px"}
             skill="Python"
             icon={
               <TbBrandPython
@@ -114,7 +109,6 @@ export function SkillsSection() {
       >
         <GridItem>
           <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Git"
             icon={
               <TbBrandGit
@@ -125,7 +119,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Docker"
             icon={
               <TbBrandDocker
@@ -136,7 +129,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Tableau"
             icon={
               <SiTableau
@@ -162,7 +154,6 @@ export function SkillsSection() {
       >
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="MongoDb"
             icon={
               <TbBrandMongodb
@@ -173,7 +164,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Firebase"
             icon={
               <TbBrandFirebase
@@ -184,7 +174,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="SQL"
             icon={
               <TbBrandMysql
@@ -210,7 +199,6 @@ export function SkillsSection() {
       >
         <GridItem>
           <SkillCard
-            hover={"rgba(233, 98, 40, 0.4)"}
             skill="HTML5"
             icon={
               <TbBrandHtml5
@@ -221,7 +209,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(37, 75, 221, 0.4)"}
             skill="Css"
             icon={
               <TbBrandCss3
@@ -232,7 +219,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(95, 151, 89, 0.4)"}
             skill="Node"
             icon={
               <TbBrandNodejs
@@ -244,7 +230,6 @@ export function SkillsSection() {
 
         <GridItem>
           <SkillCard
-            hover={"rgba(232, 78, 49, 0.4) 0px 10px 20px 4px"}
             skill="Npm"
             icon={
               <TbBrandNpm className={`${styles.skillIcon} ${styles.npmIcon}`} />
@@ -254,7 +239,6 @@ export function SkillsSection() {
 
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Django"
             icon={
               <TbBrandDjango
@@ -265,7 +249,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Chakra UI"
             icon={
               <SiChakraui
@@ -276,7 +259,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="Next.js"
             icon={
               <TbBrandNextjs
@@ -287,7 +269,6 @@ export function SkillsSection() {
         </GridItem>
         <GridItem>
           <SkillCard
-            hover={"rgba(82, 167, 75, 0.4) 0px 10px 20px 4px"}
             skill="React"
             icon={
               <TbBrandReact

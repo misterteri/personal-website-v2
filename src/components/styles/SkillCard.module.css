@@ -21,3 +21,8 @@
   .card:hover > * {
     color: white;
   }
+  .title {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgb(8, 111, 143);
+  }
