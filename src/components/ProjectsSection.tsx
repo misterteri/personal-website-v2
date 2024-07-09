@@ -1,48 +1,65 @@
-import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Heading,
+  SimpleGrid,
+  Grid,
+  GridItem,
+} from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
   return (
-    <Box
-      id="projects"
-      bg="gray.50"
-      py="12"
-      px={{
-        base: "4",
-        md: "8",
-      }}
-    >
-      <Container maxW="container.xl">
-        <Heading as="h2" size="xl" mb="8">
-          Projects
-        </Heading>
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+    <Container maxW={"80%"} id="projects" paddingTop={"120px"}>
+      <Heading textAlign={"left"} size={"3xl"}>
+        Projects
+      </Heading>
+      <br />
+      <br />
+      <Grid
+        gridTemplateColumns={{
+          lg: "repeat(3,1fr)",
+          md: "repeat(2,1fr)",
+          sm: "repeat(1,1fr)",
+        }}
+      >
+        <GridItem>
           <ProjectCard
             title="Spotify API"
-            description="In this project, I developed a data analysis pipeline for Spotify music data, encompassing data collection, preprocessing (handling missing values and normalization), and visualization using heatmaps. Key techniques included feature selection, model training, and correlation analysis, leveraging technologies like Python, Pandas, Numpy, and Scikit-learn. Visualization was achieved with Matplotlib and Seaborn, and data was accessed through the Spotify API."
-            imageSrc="https://via.placeholder.com/300"
-            imageAlt="Project 1"
+            description="Taking data from Spotify API then find a similar songs that I would probably like."
+            techStack="pandas, numpy, matplotlib, sklearn"
+            language="Python"
+            link="https://github.com/misterteri/spotify-api"
           />
+        </GridItem>
+        <GridItem>
           <ProjectCard
-            title="Web Mario"
-            description="School's Project"
-            imageSrc="https://via.placeholder.com/300"
-            imageAlt="Project 2"
+            title="Spotify API"
+            description="Taking data from Spotify API then find a similar songs that I would probably like."
+            techStack="pandas, numpy, matplotlib, sklearn"
+            language="Python"
+            link="https://github.com/misterteri/spotify-api"
           />
+        </GridItem>
+        <GridItem>
           <ProjectCard
-            title="ERP Dashboard"
-            description="-"
-            imageSrc="https://via.placeholder.com/300"
-            imageAlt="Project 3"
+            title="Spotify API"
+            description="Taking data from Spotify API then find a similar songs that I would probably like."
+            techStack="pandas, numpy, matplotlib, sklearn"
+            language="Python"
+            link="https://github.com/misterteri/spotify-api"
           />
+        </GridItem>
+        <GridItem>
           <ProjectCard
-            title="Weather App"
-            description="-"
-            imageSrc="https://via.placeholder.com/300"
-            imageAlt="Project 4"
+            title="Spotify API"
+            description="Taking data from Spotify API then find a similar songs that I would probably like."
+            techStack="pandas, numpy, matplotlib, sklearn"
+            language="Python"
+            link="https://github.com/misterteri/spotify-api"
           />
-        </SimpleGrid>
-      </Container>
-    </Box>
+        </GridItem>
+      </Grid>
+    </Container>
   );
 }

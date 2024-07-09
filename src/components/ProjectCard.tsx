@@ -1,34 +1,67 @@
-import { Box, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  Text,
+  LinkOverlay,
+  LinkBox,
+  Button,
+  Badge,
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Divider,
+  effect,
+} from "@chakra-ui/react";
 
-// Define the interface for the props
+import { ArrowForwardIcon } from "@chakra-ui/icons";
+
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageSrc: string;
-  imageAlt: string;
+  techStack: string;
+  language: string;
+  link: string;
 }
-// Use the interface to type the props in the function definition
+
 export default function ProjectCard({
   title,
   description,
-  imageSrc,
-  imageAlt,
+  techStack,
+  language,
+  link,
 }: ProjectCardProps) {
   return (
-    <Box
-      bg="white"
-      shadow="md"
-      borderRadius="md"
-      p="6"
-      maxW="sm"
+    <Card
       borderWidth="1px"
-      overflow={"hidden"}
+      borderRadius="10px"
+      margin="10px"
+      display="flex"
+      flexDirection="column"
     >
-      <Image src={imageSrc} alt={imageAlt} />
-      <Heading as="h3" size="md" mt="4">
-        {title}
-      </Heading>
-      <Text mt="2">{description}</Text>
-    </Box>
+      <CardHeader>
+        <Heading size="md">{title}</Heading>
+      </CardHeader>
+
+      <Divider />
+      <CardBody>
+        <Text mb={4}>{description}</Text>
+        <Box>
+          <Badge colorScheme="teal" mr={2}>
+            Tech Stack: {techStack}
+          </Badge>
+          <Badge colorScheme="purple">Language: {language}</Badge>
+        </Box>
+      </CardBody>
+      <CardFooter>
+        <Button
+          rightIcon={<ArrowForwardIcon />}
+          colorScheme="teal"
+          variant="outline"
+        >
+          View Project
+        </Button>
+      </CardFooter>
+    </Card>
   );
 }
