@@ -2,16 +2,13 @@ import {
   Box,
   Heading,
   Text,
-  LinkOverlay,
   LinkBox,
-  Button,
   Badge,
   Card,
   CardHeader,
   CardBody,
   CardFooter,
   Divider,
-  effect,
   Link,
 } from "@chakra-ui/react";
 

@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Grid,
-  GridItem,
-} from "@chakra-ui/react";
+import { Container, Heading, Grid, GridItem } from "@chakra-ui/react";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
