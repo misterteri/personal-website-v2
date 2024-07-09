@@ -12,9 +12,10 @@ import {
   CardFooter,
   Divider,
   effect,
+  Link,
 } from "@chakra-ui/react";
 
-import { ArrowForwardIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 
 interface ProjectCardProps {
   title: string;
@@ -54,13 +55,11 @@ export default function ProjectCard({
         </Box>
       </CardBody>
       <CardFooter>
-        <Button
-          rightIcon={<ArrowForwardIcon />}
-          colorScheme="teal"
-          variant="outline"
-        >
-          View Project
-        </Button>
+        <LinkBox>
+          <Link href={link} isExternal>
+            View on GitHub <ExternalLinkIcon />
+          </Link>
+        </LinkBox>
       </CardFooter>
     </Card>
   );
