@@ -32,10 +32,10 @@ export default function HeroSection(): JSX.Element {
             technology.
           </Text>
           <Text fontSize="xl" color="gray.500">
-            As a soon-to-be Computer Science graduate from National Tsing Hua
-            University (NTHU) in Taiwan, I'm on the lookout for software
-            engineering or developer roles. I'm passionate about honing my
-            skills and sharing my journey to inspire others.
+            As a Computer Science graduate from National Tsing Hua University
+            (NTHU) in Taiwan, I'm on the lookout for software engineering or
+            developer roles. I'm passionate about honing my skills and sharing
+            my journey to inspire others.
           </Text>
           <Text fontSize="xl" color="gray.500">
             I've built a solid foundation in both front-end and back-end
