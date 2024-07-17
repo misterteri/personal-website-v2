@@ -28,6 +28,8 @@ const pulse = keyframes`
 `;
 
 export default function HeroSection() {
+  const resume_link =
+    "https://drive.google.com/file/d/13VWTE5yl4CGeC83bTGUMJvEwfae0Pcoh/view?usp=sharing";
   return (
     <Grid
       id="herosection"
@@ -93,7 +95,7 @@ export default function HeroSection() {
         alignItems="center"
       >
         <Link
-          href="https://drive.google.com/file/d/1jPIHBc3KxCRrosEjnPYA03Zi2XV3k-GN/view?usp=sharing"
+          href={resume_link}
           _hover={{ filter: "invert(100%)" }}
           variant="solid"
           paddingInline={"1vw"}
