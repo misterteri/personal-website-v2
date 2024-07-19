@@ -17,11 +17,20 @@ export default function ProjectsSection() {
       >
         <GridItem>
           <ProjectCard
-            title="Spotify API"
-            description="Taking data from Spotify API then find a similar songs that I would probably like."
-            techStack="pandas, numpy, matplotlib, sklearn"
-            language="Python"
-            link="https://github.com/misterteri/spotify-api"
+            title="Personal Website"
+            description="I made this website to document my journey in the tech field and share what I've been up to. "
+            techStack="React, Chakra UI, Next.js"
+            language="Typescript, CSS, html"
+            link="https://github.com/misterteri/personal-websiteV2"
+          />
+        </GridItem>
+        <GridItem>
+          <ProjectCard
+            title="ERP Dashboard"
+            description="Check out our ERP dashboard! My friend and I created it to simplify business processes, offering an easy way to track everything from sales to stock levels."
+            techStack="Django, PostgreSQL"
+            language="Python, SQL"
+            link="https://github.com/misterteri/erp"
           />
         </GridItem>
         <GridItem>
@@ -35,20 +44,11 @@ export default function ProjectsSection() {
         </GridItem>
         <GridItem>
           <ProjectCard
-            title="Spotify API"
-            description="Taking data from Spotify API then find a similar songs that I would probably like."
-            techStack="pandas, numpy, matplotlib, sklearn"
-            language="Python"
-            link="https://github.com/misterteri/spotify-api"
-          />
-        </GridItem>
-        <GridItem>
-          <ProjectCard
-            title="Spotify API"
-            description="Taking data from Spotify API then find a similar songs that I would probably like."
-            techStack="pandas, numpy, matplotlib, sklearn"
-            language="Python"
-            link="https://github.com/misterteri/spotify-api"
+            title="Shopping Cart"
+            description="I built this shopping cart as my initial foray into web development. It’s a simple project that made learning how to build websites an enjoyable experience."
+            techStack="JSX, React"
+            language="Javascript"
+            link="https://github.com/misterteri/Shopping-Cart"
           />
         </GridItem>
       </Grid>
