@@ -29,7 +29,7 @@ const pulse = keyframes`
 
 export default function HeroSection() {
   const resume_link =
-    "https://drive.google.com/file/d/13VWTE5yl4CGeC83bTGUMJvEwfae0Pcoh/view?usp=sharing";
+    "https://drive.google.com/drive/folders/1inHi6Z3flpgHPHB_-3vE0nGrH2P7QfHJ?usp=drive_link";
   return (
     <Grid
       id="herosection"
