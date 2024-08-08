@@ -14,22 +14,12 @@ function App() {
     <ChakraProvider theme={theme}>
       <Router>
         <Navbar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HeroSection />
-                <AboutSection />
-                <SkillsSection />
-                <ProjectsSection />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/project-spotifyApi" element={<SpotifyApi />} />
-        </Routes>
-      </Router>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <Footer />
+      </Router>          
     </ChakraProvider>
   );
 }
