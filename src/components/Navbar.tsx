@@ -2,19 +2,18 @@ import { Box, HStack, Link, Spacer, Text, Flex } from "@chakra-ui/react";
 import { Link as ScrollLink } from "react-scroll";
 export default function Navbar(): JSX.Element {
   return (
-    <Flex
+    <Box
       position="fixed"
-      top="0"
-      left="50%"
-      transform="translateX(-50%)"
       maxW="container.xl"
+      top = "0"
       width="100%"
       paddingInline={4}
       height="7vh" // Set a fixed height for the Navbar
       backdropFilter="blur(5px)" // Add backdrop filter to make the content slightly blurry
       zIndex={10} // Add z-index to make it appear above other elements
     >
-      <Box
+       <Flex alignItems="center">
+      <Flex
         // border="1px solid #e2e8f0"
         margin="auto"
       >
@@ -28,11 +27,11 @@ export default function Navbar(): JSX.Element {
             /dev/gilbert
           </Text>
         </ScrollLink>
-      </Box>
+      </Flex>
       <Spacer />
       <HStack spacing={4}>
         <ScrollLink to="about-me" smooth={true} duration={500} offset={-70}>
-          <Box
+          <Flex
             margin="auto"
             borderRadius="md"
             paddingInline={1}
@@ -46,11 +45,11 @@ export default function Navbar(): JSX.Element {
             <Text fontSize="xl" cursor="pointer">
               About Me
             </Text>
-          </Box>
+          </Flex>
         </ScrollLink>
 
         <ScrollLink to="skills" smooth={true} duration={500} offset={-70}>
-          <Box
+          <Flex
             borderRadius="md"
             paddingInline={1}
             paddingBlockStart={1}
@@ -63,10 +62,10 @@ export default function Navbar(): JSX.Element {
             <Text fontSize="xl" cursor="pointer">
               Skills
             </Text>
-          </Box>
+          </Flex>
         </ScrollLink>
         <ScrollLink to="projects" smooth={true} duration={500} offset={-70}>
-          <Box
+          <Flex
             borderRadius="md"
             paddingInline={1}
             paddingBlockStart={1}
@@ -79,7 +78,7 @@ export default function Navbar(): JSX.Element {
             <Text fontSize="xl" cursor="pointer">
               Projects
             </Text>
-          </Box>
+          </Flex>
         </ScrollLink>
         <Link
           href="mailto:marcelinogilbert26@gmail.com"
@@ -95,6 +94,7 @@ export default function Navbar(): JSX.Element {
           <Text fontSize="xl">Contact</Text>
         </Link>
       </HStack>
-    </Flex>
+      </Flex>
+    </Box>
   );
 }
