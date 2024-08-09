@@ -60,6 +60,15 @@ export default function ProjectsSection() {
             link="https://github.com/misterteri/rag-docs"
           />
         </GridItem>
+        <GridItem>
+          <ProjectCard
+            title="Image Search Engine"
+            description="This project involves building a Retrieval-Augmented Generation (RAG) system using EPUB documents as the data source. The workflow includes populating a Weaviate vector store with embeddings generated from the content of EPUB files, using a HuggingFace model for embedding extraction. Users can then query this system to retrieve relevant information from the stored documents, utilizing a Gradio interface for interaction and displaying the results."
+            techStack="Gradio, Llama3, Weaviate, Ollama, HuggingFace"
+            language="Python"
+            link="https://github.com/misterteri/rag-docs"
+          />
+        </GridItem>
       </Grid>
     </Container>
   );
