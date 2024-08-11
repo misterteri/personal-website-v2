@@ -33,22 +33,20 @@ export default function HeroSection() {
   return (
     <Grid
       id="herosection"
-      paddingTop={"7vh"}
+      marginTop={"9vh"}
       templateAreas={`"name name"
-                        "surname title"
-                        "surname buttons"`}
-      templateRows="auto auto auto"
+                      "surname title"`}
+      templateRows="auto auto "
       templateColumns="auto auto"
       userSelect={"none"}
     >
       <GridItem
         area="name"
         display="flex"
-        alignItems="center"
-        justifyContent="center"
-        userSelect={"none"}
+        
+        // overflow="hidden"
       >
-        <Heading fontSize="16.5vw" transform="scaleY(1.3)">
+        <Heading fontSize="16.5vw" transform="scaleY(1.2)">
           MARCELINO
         </Heading>
       </GridItem>
@@ -56,14 +54,11 @@ export default function HeroSection() {
       <GridItem
         area="surname"
         display="flex"
-        alignItems="center"
-        justifyContent="center"
+        alignItems="center" // Align items vertically
+        justifyContent="center" // Align items horizontally
+        
       >
-        <Heading
-          fontSize={["18vw", "18vw", "18vw", "18vw"]}
-          transform="scaleY(1.3)"
-          zIndex={-1}
-        >
+        <Heading fontSize="17vw" transform="scaleY(1.2)" textAlign="center">
           GILBERT
         </Heading>
       </GridItem>
@@ -72,44 +67,37 @@ export default function HeroSection() {
         area="title"
         display="flex"
         flexDirection="column"
-        alignItems="left"
-        padding="1vw"
+        alignItems="center"
       >
         <Box>
-          <Text fontSize="3vw" fontWeight={"bold"}>
+          <Text fontSize="3vw" fontWeight={"bold"} >
             Hsinchu, Taiwan
           </Text>
         </Box>
         <Box display="flex">
-          <Text fontSize="3vw">jr. fullstack</Text>
+          <Text fontSize="3vw" textAlign="center">
+            Software Engineer
+          </Text>
         </Box>
-        <Box display="flex" alignItems="center">
-          <Text fontSize="3vw">jr. data engineer</Text>
-        </Box>
-      </GridItem>
-
-      <GridItem
-        area="buttons"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-      >
         <Link
           href={resume_link}
           _hover={{ filter: "invert(100%)" }}
           variant="solid"
-          paddingInline={"1vw"}
-          paddingBlockStart={"0.5vw"}
+          paddingInline={"2vw"}
+          paddingBlockStart={"1vw"}
           paddingBlockEnd={"1vw"}
           borderRadius="5px"
           fontSize="3vw"
           animation={`${pulse} 2s infinite`}
           transition="transform 0.2s, box-shadow 0.2s"
+          bg="transparent"
+          border="2px solid currentColor"
+          color="black"
+          mb="1vw"
         >
-          view resume
+          View Resume
         </Link>
       </GridItem>
-      {/* <ScrollArrow /> */}
     </Grid>
   );
 }
