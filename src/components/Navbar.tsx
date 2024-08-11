@@ -4,18 +4,17 @@ export default function Navbar(): JSX.Element {
   return (
     <Box
       position="fixed"
-      maxW="container.xl"
       top = "0"
-      width="100%"
-      paddingInline={4}
+      width="100%" 
+      paddingInline={4} // Add padding to the left and right
       height="7vh" // Set a fixed height for the Navbar
       backdropFilter="blur(5px)" // Add backdrop filter to make the content slightly blurry
       zIndex={10} // Add z-index to make it appear above other elements
     >
-       <Flex alignItems="center">
-      <Flex
+      <Flex alignItems="center">
+      <Box
         // border="1px solid #e2e8f0"
-        margin="auto"
+        // margin="auto"
       >
         <ScrollLink
           to="herosection"
@@ -27,7 +26,7 @@ export default function Navbar(): JSX.Element {
             /dev/gilbert
           </Text>
         </ScrollLink>
-      </Flex>
+      </Box>
       <Spacer />
       <HStack spacing={4}>
         <ScrollLink to="about-me" smooth={true} duration={500} offset={-70}>
@@ -38,8 +37,7 @@ export default function Navbar(): JSX.Element {
             paddingBlockStart={1}
             paddingBlockEnd={2}
             _hover={{
-              bg: "gray.100",
-              transitionDuration: "0.3s",
+              textDecoration: "underline",
             }}
           >
             <Text fontSize="xl" cursor="pointer">
@@ -55,8 +53,7 @@ export default function Navbar(): JSX.Element {
             paddingBlockStart={1}
             paddingBlockEnd={2}
             _hover={{
-              bg: "gray.100",
-              transitionDuration: "0.3s",
+              textDecoration: "underline",
             }}
           >
             <Text fontSize="xl" cursor="pointer">
@@ -71,8 +68,7 @@ export default function Navbar(): JSX.Element {
             paddingBlockStart={1}
             paddingBlockEnd={2}
             _hover={{
-              bg: "gray.100",
-              transitionDuration: "0.3s",
+              textDecoration: "underline",
             }}
           >
             <Text fontSize="xl" cursor="pointer">
@@ -87,8 +83,7 @@ export default function Navbar(): JSX.Element {
           paddingBlockStart={1} // Modify padding top
           paddingBlockEnd={2} // Modify padding bottom
           _hover={{
-            bg: "gray.100",
-            time: "0.3s",
+            textDecoration: "underline",
           }}
         >
           <Text fontSize="xl">Contact</Text>
