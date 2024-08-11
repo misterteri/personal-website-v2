@@ -54,7 +54,7 @@ export default function ProjectsSection() {
         <GridItem>
           <ProjectCard
             title="RAG Documents"
-            description="This project involves building a Retrieval-Augmented Generation (RAG) system using EPUB documents as the data source. The workflow includes populating a Weaviate vector store with embeddings generated from the content of EPUB files, using a HuggingFace model for embedding extraction. Users can then query this system to retrieve relevant information from the stored documents, utilizing a Gradio interface for interaction and displaying the results."
+            description="This project involves building a Retrieval-Augmented Generation (RAG) system using EPUB documents as the data source. The system populates a vector store with embeddings generated from EPUB content and allows users to query and retrieve relevant information from the documents through a user-friendly interface."
             techStack="Gradio, Llama3, Weaviate, Ollama, HuggingFace"
             language="Python"
             link="https://github.com/misterteri/rag-docs"
@@ -63,10 +63,10 @@ export default function ProjectsSection() {
         <GridItem>
           <ProjectCard
             title="Image Search Engine"
-            description="This project involves building a Retrieval-Augmented Generation (RAG) system using EPUB documents as the data source. The workflow includes populating a Weaviate vector store with embeddings generated from the content of EPUB files, using a HuggingFace model for embedding extraction. Users can then query this system to retrieve relevant information from the stored documents, utilizing a Gradio interface for interaction and displaying the results."
+            description="An advanced image search engine to enable efficient visual searches based on text queries. It generates descriptive text from images, converts them into high-dimensional vectors, and uses cosine similarity to retrieve the most relevant images."
             techStack="Gradio, Llama3, Weaviate, Ollama, HuggingFace"
             language="Python"
-            link="https://github.com/misterteri/rag-docs"
+            link="https://github.com/misterteri/image-search-engine"
           />
         </GridItem>
       </Grid>
