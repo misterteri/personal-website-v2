@@ -8,6 +8,7 @@ import { SkillsSection } from "./components/SkillsSection";
 import Footer from "./components/Footer";
 import ProjectsSection from "./components/ProjectsSection";
 import SpotifyApi from "./pages/project-spotifyApi";
+import ScrollArrow from "./components/ScrollArrow";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Navbar />
         <HeroSection />
+        <ScrollArrow />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
