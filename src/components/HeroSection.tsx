@@ -78,23 +78,33 @@ export default function HeroSection() {
           </Text>
         </Box>
         <Link
-          href={resume_link}
-          _hover={{ filter: "invert(100%)" }}
-          variant="solid"
-          paddingInline={"2vw"}
-          paddingBlockStart={"1vw"}
-          paddingBlockEnd={"1vw"}
-          borderRadius="5px"
-          fontSize="3vw"
-          animation={`${pulse} 2s infinite`}
-          transition="transform 0.2s, box-shadow 0.2s"
-          bg="transparent"
-          border="2px solid currentColor"
-          color="black"
-          mb="1vw"
-        >
-          View Resume
-        </Link>
+  href={resume_link}
+  _hover={{
+    boxShadow: "0 0 10px rgba(255, 255, 255, 0.8)",
+    bg: "black",
+    color: "white",
+    fontWeight: "bold",  // Use fontWeight to make text extra bold
+    borderRadius: "10px",
+    transition: "0.7s",
+  }}
+  position="relative"
+  display="inline-block"
+  paddingInline={"2vw"}
+  paddingBlockStart={"1vw"}
+  paddingBlockEnd={"1vw"}
+  borderRadius="10px"
+  fontSize="3vw"
+  bg="transparent"
+  fontWeight="bold"
+  border="2px solid currentColor"
+  color="black"
+  mb="1vw"
+  animation={`${pulse} 2s infinite`}
+>
+  View Resume
+</Link>
+
+
       </GridItem>
     </Grid>
   );
