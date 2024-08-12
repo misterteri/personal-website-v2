@@ -65,17 +65,15 @@ export default function HeroSection() {
 
       <GridItem
         area="title"
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
+        alignItems="top" 
       >
         <Box>
-          <Text fontSize="3vw" fontWeight={"bold"} >
+          <Text fontSize="3vw"  >
             Hsinchu, Taiwan
           </Text>
         </Box>
         <Box display="flex">
-          <Text fontSize="3vw" textAlign="center">
+          <Text fontSize="3vw" >
             Software Engineer
           </Text>
         </Box>
