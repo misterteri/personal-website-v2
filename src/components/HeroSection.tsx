@@ -43,7 +43,8 @@ export default function HeroSection() {
       <GridItem
         area="name"
         display="flex"
-        
+        alignItems="center" // make the text center vertically
+        justifyContent="center"  // make the text center horizontally        
         // overflow="hidden"
       >
         <Heading fontSize="16.5vw" transform="scaleY(1.2)">
