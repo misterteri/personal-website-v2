@@ -12,6 +12,7 @@ export default function ProjectsSection() {
       <Grid
         gridTemplateColumns={{
           lg: "repeat(2,1fr)",
+          md: "repeat(1,1fr)",
           sm: "repeat(1,1fr)",
         }}
       >

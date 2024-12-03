@@ -33,9 +33,10 @@ export default function ProjectCard({
     <Card
       borderWidth="1px"
       borderRadius="10px"
-      margin="10px"
-      display="flex"
-      flexDirection="column"
+      margin="20px"
+      display= "flex"
+      flex-direction= "column"
+      justify-content= "space-between"
     >
       <CardHeader>
         <Heading size="md">{title}</Heading>
